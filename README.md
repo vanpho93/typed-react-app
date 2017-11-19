@@ -1,6 +1,8 @@
 1. How to create react app using typescript?
 
-<code>create-react-app my-app --scripts-version=react-scripts-ts</code>
+```shell
+create-react-app my-app --scripts-version=react-scripts-ts
+```
 
 2. How to create new typed stateless component?
 
