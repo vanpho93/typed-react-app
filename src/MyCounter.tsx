@@ -54,8 +54,8 @@ class MyCounter extends React.Component<Props, {}> {
 //     );
 // }
 
-function mergeProps(stateProps: StateToProps, dispatchProps: DispatchToProps, ownProps: { name?: string }) {
-    return Object.assign({}, ownProps, stateProps, dispatchProps);
+function mergeProps(stateProps: {}, dispatchProps: {}, ownProps: {}) {
+    return { ...ownProps, ...stateProps, ...dispatchProps };
 }
 
 export default connect<StateToProps, DispatchToProps, { name?: string }, {}>
