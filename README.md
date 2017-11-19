@@ -20,3 +20,19 @@ function MyCounter(props: Props) {
     );
 }
 </pre>
+<code>
+interface Props {
+    value: number;
+    increaseValue?: () => void;
+    increaseAsync?: () => void;
+}
+
+function MyCounter(props: Props) {
+    return (
+        <div style={{ padding: 10 }}>
+            <div>My value is {props.value}</div>
+            <button onClick={props.increaseValue}>Increase</button>
+        </div>
+    );
+}
+</code>
